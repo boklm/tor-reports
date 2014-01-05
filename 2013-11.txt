@@ -1,0 +1,25 @@
+Hello,
+
+In November I started working on automation :
+
+- Created a script to convert a tor browser git branch to a mercurial
+  repository suitable for pushing to Mozilla's Try Servers :
+  https://github.com/boklm/tor-browser-try
+  Mike has a Mozilla account to push there, so we should be able with
+  this script to run tests for tor browser on Mozilla tests infrastructure.
+
+- Started looking at tor, tor browser, TBB build process and status
+  regarding automation. Started writting a few things in this document :
+  https://people.torproject.org/~boklm/automation/tor-automation-review.html
+
+In December I plan to :
+
+- get tor browser tested on Mozilla Try
+
+- discuss with people about automation needs / ideas
+
+- finish writting the document about tor automation review and make
+  prototypes for some of the proposals
+
+- attend 30c3 and meet a few people there
+
