@@ -1,0 +1,27 @@
+The main things I did in December:
+
+- continued to review current status of automation in tor project, and
+  needs:
+    https://people.torproject.org/~boklm/automation/tor-automation-review.html
+
+- discussed some of these things on tor-dev mailing list
+
+- wrote some proposals for things to do in automation in coming months:
+    https://people.torproject.org/~boklm/automation/tor-automation-proposals.html
+
+- made a prototype for a possible refactoring of TBB build proccess
+  with an other tool than gitian:
+    https://github.com/boklm/burps-tor
+  It is described on this page with some details about how it works,
+  and why I think it would be good:
+    https://people.torproject.org/~boklm/automation/tor-automation-proposals.html#build-tool
+
+- added a '--rebase-onto=<commit>' option to the script to convert our
+  tor-browser git repository to a mercurial queue to be pushed to
+  Mozilla Try. This can allow us to also test the tor-browser patches
+  rebased onto the developement version of FireFox ESR. This script
+  should be ready to be used to push tor-browser to mozilla try
+  automatically, but I still need to see with Mike on which server to
+  deploy it (that was delayed because of TBB 3.5 release at the same
+  time, and then I forgot to ping again to finish this).
+
