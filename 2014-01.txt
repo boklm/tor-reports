@@ -1,0 +1,41 @@
+Things I have done since last report:
+
+- sent a proposal for a gitian replacement:
+  https://lists.torproject.org/pipermail/tor-dev/2014-January/006047.html
+
+- made some improvement on this gitian replacement tool and new build
+  process prototype:
+   o renamed the tool with a better name (Reproducible Build Manager)
+   o added support for pre/post build scripts and a few other improvements
+     to the tool
+   o started adding support for windows builds (done for binutils, libevent,
+     openssl, zlib, tor, but not yet for the browser, and I did not check
+     yet that the produced binaries work)
+
+- discussed with Erinn about the new dist server setup, and started
+  some scripts: https://github.com/boklm/upload-manager
+
+- attended FOSDEM, and after that cfgmgmtcamp.eu, and saw some interesting
+  talks there (including the one from Lunar about reproducible builds
+  for Debian).
+
+- started looking at docker.io and how we can use it. It is a tool based
+  on LXC and DeviceMapper to manage containers, with easy to use snapshot
+  features. It looks like something we can use in our build/test process
+  to run the builds and tests inside clean containers each time.
+
+
+Some things I'm planning to do in Febuary:
+
+- come to the dev meeting in Iceland
+
+- finish the new build process prototype to make it build a full bundle
+  for windows and osx.
+
+- start collecting tests such as this:
+  https://lists.torproject.org/pipermail/tor-qa/2014-January/000316.html
+  and try to integrate them into a test suite we can run automatically
+
+- look at the release process to participate in tbb rotating release
+  duties
+
