@@ -1,0 +1,39 @@
+Things I've done since last month:
+
+- attended dev meeting in Iceland
+
+- fixed the script to submit tor-browser to mozilla try[1],
+  to stop relying on 'FIREFOX_*' tags since they have been removed from
+  the new gecko-dev git repository.
+
+- made a script to prune old tbb nightly builds[2]
+
+- started work on a TBB test suite[3]. At the moment it is able to take
+  a tbb tarball, a sha256sums.txt file or URL of a sha256sums.txt file
+  containing a list of tbb tarballs, check that we can bootstrap tor,
+  run mozmill and selenium tests (for now only 2 very simple tests, more
+  tests need to be added), and create a test report with screenshots.
+  An example report is here[4].
+
+- some work on a new build system, but I have paused that work
+  temporarily to concentrate on the TBB test suite which is currently
+  higher priority.
+
+- and in other (non-tor) news, next version of git will have an option
+  to sign all commits[5] (some patchs I made a few months ago were
+  merged to master).
+
+[1]: https://github.com/boklm/tor-browser-try/commit/e158cc7e852b5db58bb4163e807fb719d6b2732f
+[2]: https://github.com/boklm/prune-old-builds
+[3]: https://gitweb.torproject.org/boklm/tor-browser-bundle-testsuite.git
+[4]: https://people.torproject.org/~boklm/tmp/tests/tbb3.5.2.1/
+[5]: https://github.com/git/git/commits?author=boklm
+
+
+Things I'm planning for next month:
+
+- getting the TBB test suite run on TBB nightlies
+
+- implementing more tests in the TBB test suite (ticket #11024 has a
+  list of what is planned)
+
