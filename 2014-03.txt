@@ -1,0 +1,36 @@
+Things I've done in March and (since I'm sending this late) begining of
+April:
+
+- setup a few VMs running different Linux distributions (CentOS 6.5,
+  Fedora 20, Debian Wheezy, Ubuntu 12.04), to run tests on TBB.
+
+- made the test suite run on TBB nightlies, and new releases
+
+- added some more tests [1]
+
+- added upload of Windows TBB files to virustotal [2]
+
+- wrote some documentation about how to install / run the test suite,
+  and how to add new tests [3]
+
+- started looking at how to run the tests on Windows, using Cygwin
+
+- answered RT tickets on french help desk for a week while Lunar was offline
+
+[1]: https://people.torproject.org/~boklm/tbbtests/tests.html
+[2]: https://people.torproject.org/~boklm/tbbtests/r/3.6-beta-2-build3-win32-virustotal/
+[3]: https://people.torproject.org/~boklm/tbbtests-doc/
+
+
+Some things I'm planning for April:
+
+- get tests running on Windows
+
+- review tickets tagged with tbb-testcase to see what tests are needed
+
+- add an option to run tests in Docker. This should allow us to have
+  two things: a list of all modified files after running a test, so we
+  can check that the browser does not leave any data in unexpected
+  places, and a virtual network interface that we can use to log all
+  traffic, so we can check that everything is going through Tor.
+
