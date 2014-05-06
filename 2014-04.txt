@@ -1,0 +1,24 @@
+Since last report:
+
+- Test suite is now run automatically on new builds, when they have been
+  tagged on the git repository and are available on people.torproject.org[1]
+
+- Result of tests run on new releases are now sent to tor-qa mailing list
+
+- I added some tests to try connecting to tor using combinations of
+  bridges, PT (obfs3 or fte) and an http proxy.
+
+- I got the tbb test suite running on Windows using Cygwin. I still need
+  to deploy this on some VM to have it run automatically.
+
+- Looked at Mbox[2]: a sandboxing tool based on ptrace and seccomp/BPF.
+  This can be used in the test suite to get the list of files modified
+  by the browser after running a test, to check that it did not create
+  or modify files in unexpected places. This can also be used to log
+  all network connections, to check that everything goes through tor.
+  I was previously thinking about doing that using Docker, but now it
+  seems more simple with Mbox.
+
+[1]: https://lists.torproject.org/pipermail/tor-qa/2014-May/000405.html
+[2]: http://pdos.csail.mit.edu/mbox/
+
