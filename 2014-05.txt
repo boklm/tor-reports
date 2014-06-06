@@ -1,0 +1,26 @@
+What I've been doing in May:
+
+- fixed some bugs in mbox to allow running the Tor Browser with it,
+  and other patches to allow filtering which connections are allowed[1].
+
+- added support in the test suite for running the tests with mbox, to
+  monitor the network connections created, and files modified. The
+  network monitoring part is working, but there are some bugs in mbox
+  filesystem sandboxing that prevent mozmill from working. I need to
+  investigate what is happenning to fix the problem in mbox.
+
+- checked why we were seeing some connections by tor browser on startup
+  to the dns server, and default SOCKS port[2].
+
+- merged the patch from Gunes Acar adding some fingerprinting tests.
+
+- added some tests to check that all binaries included in the Linux Tor
+  Browser bundle are compiled with correct hardenning options.
+
+- made changes needed in the test suite to support the new Tor Browser
+  layout introduced in #11641.
+
+
+[1]: https://lists.torproject.org/pipermail/tor-dev/2014-May/006911.html
+[2]: https://lists.torproject.org/pipermail/tbb-dev/2014-May/000050.html
+
