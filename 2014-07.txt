@@ -1,0 +1,23 @@
+The main things I've been doing in July:
+
+- attended the Tor dev meeting in Paris
+
+- improved the tor browser testsuite so it can support different test
+  suites. Initially it started as a script to run a suite of tests on the
+  bundle only, and now we are running a different list of tests from the
+  tor browser sources tree. Later it will be possible to use it to run
+  other tests on Tor Messenger bundle.
+
+- added support for running xpcshell tests.
+
+- a lot of xpcshell tests are failing, and in order to understand why
+  they are failing, a useful information is which tor-browser patch
+  cause which test to fail. So I made it possible to build tor-browser
+  and run the tests on each of our commits, and show on a page the new
+  test failures introduced or fixed by each commit[1].
+
+- various improvements on the generated tests reports
+
+
+[1]: http://93.95.228.164/reports/index-browserunit-2014-07.html
+
