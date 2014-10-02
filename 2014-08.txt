@@ -1,0 +1,19 @@
+The main things I have done in August:
+
+- made a script to generate responses for the new TBB updater (#12622).
+
+- improved the test reports index page[1]
+
+- added support for running mochitests included in the tor-browser
+  sources tree.
+
+- made it possible to ignore some test failures for known issues[2].
+
+- added a test suggested in the iSEC partners' report to enumerate
+  exposed DOM objects[3]. It still needs to be improved to enumerate them
+  recursively (#13094).
+
+[1]: http://93.95.228.164/reports/
+[2]: https://gitweb.torproject.org/boklm/tor-browser-bundle-testsuite.git/commitdiff/63442ae2d0bb750761bbf42156f5cedb0493d51a
+[3]: https://gitweb.torproject.org/boklm/tor-browser-bundle-testsuite.git/blob/HEAD:/mozmill-tests/tbb-tests/dom-objects-enumeration.js
+
