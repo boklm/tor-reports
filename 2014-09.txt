@@ -1,0 +1,19 @@
+The main things I have done in September:
+
+- investigated why many of the mochitests are failing with "Test timed
+  out" errors. The reason was that we were running those tests using
+  xvfb, without a window manager. I updated the test suite to launch an
+  Xorg server with the dummy driver and a window manager to run the tests.
+
+- Made some changes to the update responses script for ticket #13047.
+  This script has now been included in builders/tor-browser-bundle.git
+  and used to generate the update responses for the 4.0-alpha-2 ->
+  4.0-alpha-3 update.
+
+- added a new test that loads a page playing videos in different formats.
+  Using mbox we are checking that there is no network leak while those
+  videos are played.
+
+- added some documentation about adding new tests:
+  https://people.torproject.org/~boklm/tbbtests-doc/new-test.html
+
