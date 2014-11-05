@@ -1,0 +1,18 @@
+The main things I have done in October:
+
+- added support for the generation of incremental mar files in
+  update_responses script: #13324
+
+- worked on a patch to use git tags to set tor browser version: #13015
+
+- launched rebuild and unit tests on all tor-browser esr31.2 commits[1]
+
+- fixed and improved virustotal uploads[2]
+
+- worked with Arlo and Sukhbir to automate Tor Messenger build process[3]
+  so we can have nightly builds. We now have linux i686 and x86_64 builds.
+  Windows and OS X builds should be comming soon.
+
+[1]: http://93.95.228.164/reports/index-browserunit-tor-browser-31.2.0esr-4.x-1-build2.html
+[2]: http://93.95.228.164/reports/index-browserbundle_virustotal.html
+[3]: https://gitweb.torproject.org/tor-messenger-build.git
