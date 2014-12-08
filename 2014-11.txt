@@ -1,0 +1,29 @@
+The main things I have done in November:
+
+- added support for arch migration in the update_responses script[1]
+
+- started an experiment to automatically rebase tor browser patches on
+  gecko-dev master branch[2][3]. It still needs a few improvements before
+  we run it automatically every day and notify of new patches that fail
+  to apply.
+
+- fixed a few problems in the tbb testsuite to make it run on Windows
+  using cygwin.
+
+- worked with Arlo and Sukhbir on Tor Messenger build. While working on
+  a Windows build, I made a patch to fix some mingw cross compile issues
+  on mozilla-central[4], which has also been fixed upstream by someone
+  else at the same time[5]. Fixed some other build issues on comm-central[6][7].
+
+- we need a new person for French support (Lunar who has been doing that
+  until now will be away for a while) but we don't have one yet so I
+  took over answering french helpdesk emails in the interim.
+
+[1]: https://gitweb.torproject.org/builders/tor-browser-bundle.git/commit/?id=20623d486854403dacc08ae953cc20ebcfeb6802
+[2]: https://lists.torproject.org/pipermail/tbb-dev/2014-November/000165.html
+[3]: https://people.torproject.org/~boklm/tmp/tests/r/S2kNQApISx/browser-rebase.html
+[4]: https://gitweb.torproject.org/tor-messenger-build.git/tree/projects/instantbird/fix-mingw-build.mozpatch?id=d6e4177f160e0aedb98dc6d40f95df928074f2a2
+[5]: https://hg.mozilla.org/mozilla-central/rev/62af62f4f0a4
+[6]: https://bugzilla.mozilla.org/show_bug.cgi?id=1107959
+[7]: https://bugzilla.mozilla.org/show_bug.cgi?id=741340
+
